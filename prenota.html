@@ -1,0 +1,117 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Omaha</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Marce"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <script>
+            function ValidateEmail(inputText)
+                {
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(inputText.value.match(mailformat))
+                {
+                alert("Valid email address!");
+                document.form1.text1.focus();
+                return true;
+                }
+                else
+                {
+                alert("You have entered an invalid email address!");
+                document.form1.text1.focus();
+                return false;
+                }
+            }
+        </script>    
+    </head>  
+
+    <!--
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣷⣶⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣾⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⡟⠁⣰⣿⣿⣿⡿⠿⠻⠿⣿⣿⣿⣿⣧⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⠏⠀⣴⣿⣿⣿⠉⠀⠀⠀⠀⠀⠈⢻⣿⣿⣇⠀⠀⠀
+    ⠀⠀⠀⠀⢀⣠⣼⣿⣿⡏⠀⢠⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⡀⠀⠀
+    ⠀⠀⠀⣰⣿⣿⣿⣿⣿⡇⠀⢸⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀    sus
+    ⠀⠀⢰⣿⣿⡿⣿⣿⣿⡇⠀⠘⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⢀⣸⣿⣿⣿⠁⠀⠀
+    ⠀⠀⣿⣿⣿⠁⣿⣿⣿⡇⠀⠀⠻⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⠃⠀⠀⠀
+    ⠀⢰⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀
+    ⠀⢸⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠛⠉⢉⣿⣿⠀⠀⠀⠀⠀⠀
+    ⠀⢸⣿⣿⣇⠀⣿⣿⣿⠀⠀⠀⠀⠀⢀⣤⣤⣤⡀⠀⠀⢸⣿⣿⣿⣷⣦⠀⠀⠀
+    ⠀⠀⢻⣿⣿⣶⣿⣿⣿⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣦⡀⠀⠉⠉⠻⣿⣿⡇⠀⠀
+    ⠀⠀⠀⠛⠿⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠈⠹⣿⣿⣇⣀⠀⣠⣾⣿⣿⡇⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣦⣤⣤⣤⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀
+
+	made by MARCE
+
+    -->
+
+    <body background="./images/paesaggio_2.png">
+
+        <h1>Registrati ora!</h1> 
+        <div class="container">
+            <form action="pages/comp_form.php" method="post">
+                <div class="text-area">
+                    <h2>Inserisci qua la tua e-mail</h2>
+                    <input name="email" type="email" placeholder="Inserisci la tua email"/>
+                </div>
+                
+                <div class="text-area">
+                    <h2>Inserisci qua nome, cognome e il nome della squadra per la prenotazione</h2>
+                    <input name="name" type="text" placeholder="Nome"/>
+                    <input name="surname" type="text" placeholder="Cognome"/>
+                    <input name="team" type="text" placeholder="Nome Squadra"/>
+                </div>
+
+
+                <div class="text-area"> 
+                    <h2>
+                        <label for="all-name">Inserisci i nomi di tutti i partecipanti:</label>
+                    </h2>
+                    <textarea id="all-name" name="all-name" maxlength="500" placeholder="Scrivi qua i vari partecipanti"></textarea>
+                    
+                    <label for="adulti"><b>Quanti menù adulti?</b></label>
+
+                    <select name="adulti">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <div class="hidden">
+                        <br>
+                    </div>
+                    
+                    <label for="bambini"><b>Quanti menù bambini?</b></label>
+                    <select name="bambini">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                    
+                <input type="submit">
+                <div class="home">
+                    <a href="./index.html">Home</a>
+                </div>
+                
+
+            </form> 
+        </div>
+    </body>
+</html>
+
+
+

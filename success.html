@@ -1,0 +1,50 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Omaha</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Marce"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <script>
+            function ValidateEmail(inputText)
+                {
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(inputText.value.match(mailformat))
+                {
+                alert("Valid email address!");
+                document.form1.text1.focus();
+                return true;
+                }
+                else
+                {
+                alert("You have entered an invalid email address!");
+                document.form1.text1.focus();
+                return false;
+                }
+            }
+        </script>    
+    </head>  
+
+    <body background="./images/paesaggio_2.png">
+        <!--
+        <h1 class="success">Dati inviati correttamente!</h1>
+        <h1><a href="index.html">Clicca qua per tornare alla home</a></h1>
+        -->
+        <div class="container">
+            <div class="all">
+                <div class="success card">
+                    <h2>Dati inviati correttamente!</h2>
+                    <p>
+                        <a href="index.html">Clicca qua per tornare alla home</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

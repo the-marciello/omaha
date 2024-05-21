@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Omaha</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Marce"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <script>
+            function ValidateEmail(inputText)
+                {
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(inputText.value.match(mailformat))
+                {
+                alert("Valid email address!");
+                document.form1.text1.focus();
+                return true;
+                }
+                else
+                {
+                alert("You have entered an invalid email address!");
+                document.form1.text1.focus();
+                return false;
+                }
+            }
+        </script>    
+    </head>  
+
+    <body background="./images/paesaggio_2.png">
+        <table>
+            <thead>
+                <tr>
+                    <th>Indice</th>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Indirizzo e-mail</th>
+                    <th>Partecipanti</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th>0</th>
+                    <th>marcello</th>
+                    <th>de bellis</th>
+                    <th>debellis.marcello@gmail.com</th>
+                    <th>7</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>marcello</th>
+                    <th>de bellis</th>
+                    <th>debellis.marcello@gmail.com</th>
+                    <th>7</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>marcello</th>
+                    <th>de bellis</th>
+                    <th>debellis.marcello@gmail.com</th>
+                    <th>7</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>marcello</th>
+                    <th>de bellis</th>
+                    <th>debellis.marcello@gmail.com</th>
+                    <th>7</th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
